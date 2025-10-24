@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Registration Form</title>
+</head>
+<body>
+<h1>STUDENT REGISTRATION FORM </H1>
+<p>Please fill out the form below to complete your registration.</p>
+<form action="/submit" method="post">
+<fieldset>
+<legend> Personal Information</legend>
+<label for="fullname">Full Name:</label><br>
+<input type="text" id="fullname" name="fullname"
+required><br><br>
+<label for="dob">Date of Birth:</label><br>
+<input type="date" id="dob" name="dob" required><br><br>
+<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="Male"
+required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+<input type="radio" id="other" name="gender" value="Other">
+<label for="other">Other</label><br><br>
+</fieldset>
+<fieldset>
+<legend> Contact Information</legend>
+<label for="email">Email Address:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+placeholder="phone number" required><br><br>
+<label for="address">Residential Address:</label><br>
+<textarea id="address" name="address" rows="3" cols="40"
+required></textarea><br><br>
+</fieldset>
+<fieldset>
+<legend> Academic Information</legend>
+<label for="course">Course Applied For:</label><br>
+<select id="course" name="course" required>
+<option value="">--Select--</option>
+<option value="bsc">BEED</option>
+<option value="bcom">BSHM</option>
+<option value="btech">COMPTECH</option>
+</select><br><br>
+<label for="yograd">Year of Graduation:</label><br>
+<input type="number" id="yograd" name="yograd" min="2020"
+max="2030" required><br><br>
+</fieldset>
+<fieldset>
+<legend> Additional Details</legend>
+<label for="hobbies">Hobbies/Interests:</label><br>
+<input type="text" id="hobbies" name="hobbies"><br><br>
+<label for="upload">Upload Photo:</label><br>
+<input type="file" id="upload" name="photo"
+accept="image/*"><br><br>
+<label for="comments">Any Comments:</label><br>
+<textarea id="comments" name="comments" rows="3"
+cols="40"></textarea><br><br>
+</fieldset>
+<fieldset>
+<legend> Declaration</legend>
+<input type="checkbox" id="declaration" name="declaration"
+required>
+<label for="declaration">I hereby declare that the above
+information is true to the best of my knowledge.</label>
+</fieldset><br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html
